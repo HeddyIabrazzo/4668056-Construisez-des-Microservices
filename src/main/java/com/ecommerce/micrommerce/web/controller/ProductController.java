@@ -81,7 +81,7 @@ public class ProductController {
         return margesProduits;
     }
 
-    @GetMapping(value = "/trierProduitsAlphabetique")
+    @GetMapping(value = "/trierProduits")
     public List<Product> trierProduitsParOrdreAlphabetique() {
         return productDao.findAllByOrderByNom();
     }
