@@ -1,0 +1,172 @@
+{
+	"id": "07ed41dc-2c44-4b1e-a5f2-61fa4a3fa3c7",
+	"name": "Microcommerce",
+	"timestamp": "2023-03-11T10:24:12.185Z",
+	"collection_id": "16015354-2829fcfb-b00a-4d2b-83fb-e7a277152b88",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "684245f0-5013-42e9-9e5d-768a5e2a175e",
+			"name": "Ajouter un produit",
+			"url": "http://localhost:9090/Produits",
+			"time": 110,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				110
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "4cf9c2e6-7324-49b4-94ab-75891fba6e96",
+			"name": "Modifier un produit",
+			"url": "http://localhost:9090/Produits",
+			"time": 14,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				14
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "5fe695b6-90a6-4e66-87a4-849166d0a0bb",
+			"name": "Supprimer un produit",
+			"url": "http://localhost:9090/Produits/4",
+			"time": 28,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				28
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "937fc6bf-7d87-4adb-9a60-cfec0f8d3137",
+			"name": "Récupérer un produit inexistant",
+			"url": "http://localhost:9090/Produits/48",
+			"time": 9,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				9
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "b2d72b4e-5f5e-40bf-9353-3bc66a864fe5",
+			"name": "Récupérer produits ordre alphabétique",
+			"url": "http://localhost:9090/trierProduitsAlphabetique",
+			"time": 86,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				86
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a4c7ee15-e153-427b-bf57-c0b634b2e075",
+			"name": "Ajouter produit gratuit",
+			"url": "http://localhost:9090/Produits",
+			"time": 7,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				7
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "5564aa66-44a3-4a1b-b3e0-e920ceefd07c",
+			"name": "Calculer marge produits",
+			"url": "http://localhost:9090/AdminProduits",
+			"time": 13,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				13
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 267,
+	"collection": {
+		"requests": [
+			{
+				"id": "684245f0-5013-42e9-9e5d-768a5e2a175e",
+				"method": "POST"
+			},
+			{
+				"id": "4cf9c2e6-7324-49b4-94ab-75891fba6e96",
+				"method": "PUT"
+			},
+			{
+				"id": "5fe695b6-90a6-4e66-87a4-849166d0a0bb",
+				"method": "DELETE"
+			},
+			{
+				"id": "937fc6bf-7d87-4adb-9a60-cfec0f8d3137",
+				"method": "GET"
+			},
+			{
+				"id": "b2d72b4e-5f5e-40bf-9353-3bc66a864fe5",
+				"method": "GET"
+			},
+			{
+				"id": "a4c7ee15-e153-427b-bf57-c0b634b2e075",
+				"method": "POST"
+			},
+			{
+				"id": "5564aa66-44a3-4a1b-b3e0-e920ceefd07c",
+				"method": "GET"
+			}
+		]
+	}
+}
